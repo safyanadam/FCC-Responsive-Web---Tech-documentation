@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Project - Vite </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Docs Vite</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <ul><li><a class="nav-link" href="#why_vite">Why Vite</a></li>
+      <li>  <a class="nav-link" href="#getting_started">Getting Started</a></li>
+      <li>  <a class="nav-link" href="#features">Features</a></li>
+      <li>  <a class="nav-link" href="#cli">CLI</a></li>
+     <li> <a class="nav-link" href="#plug_ins">Plug Ins</a></li>
+       </ul> </nav><br>
+      <section class="main-section" id="why_vite"><header>Why Vite</header>
+      <p>
+Before ES modules were available in browsers, developers had no native mechanism for authoring JavaScript in a modularized fashion. This is why we are all familiar with the concept of "bundling": using tools that crawl, process and concatenate our source modules into files that can run in the browser.
+
+Over time we have seen tools like webpack, Rollup and Parcel, which greatly improved the development experience for frontend developers.
+</p><p><li>However, as we build more and more ambitious applications, the amount of JavaScript we are dealing with is also increasing dramatically. It is not uncommon for large scale projects to contain thousands of modules. We are starting to hit a performance bottleneck for JavaScript based tooling: it can often take an unreasonably long wait (sometimes up to minutes!) to spin up a dev server, and even with Hot Module Replacement (HMR), file edits can take a couple of seconds to be reflected in the browser. The slow feedback loop can greatly affect developers' productivity and happiness.</li><br>
+
+<li>Vite aims to address these issues by leveraging new advancements in the ecosystem: the availability of native ES modules in the browser, and the rise of JavaScript tools written in compile-to-native languages.</li>
+</p></section>
+      <section class="main-section" id="getting_started"><header>Getting Started</header>
+      <p>Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts:
+        <li>A dev server that provides rich feature enhancements over native ES modules, for example extremely fast Hot Module Replacement (HMR).</li>
+        <li>A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.</li>
+      </p>
+      <h7>Scaffolding Your First Vite Project</h7>
+      <p>
+        With NPM:<br/>
+        <code>$ npm create vite@latest</code><br/>
+<br>
+        With Yarn:<br/>
+        <code>$ yarn create vite</code><br/>
+<br>
+        With PNPM:<br/>
+        <code>$ pnpm create vite</code><br/>
+<br>
+       Then follow the prompts!</<br/>
+       <br>
+<br>
+You can also directly specify the project name and the template you want to use via additional command line options. For example, to scaffold a Vite + Vue project, run:<br>
+<br>
+<code># npm 6.x<br>
+npm create vite@latest my-vue-app --template vue<br>
+<br></code>
+<code># npm 7+, extra double-dash is needed:<br>
+npm create vite@latest my-vue-app -- --template vue<br></code>
+<br>
+<code># yarn<br>
+yarn create vite my-vue-app --template vue<br></code>
+<br>
+<code># pnpm<br>
+pnpm create vite my-vue-app --template vue </code>
+        </p></section>
+      <section class="main-section" id="features"><header>Features</header>
+      <p></p>
+      
+      <p></p></section>
+      <section class="main-section" id="cli"><header>CLI</header>
+      <p>
+      Start Vite dev server in the current directory.<br>
+      <br>
+      <code>vite [root]</code><br>
+
+      </p>
+      Build for production.<br>
+      <br>
+      <code>vite build [root]</code>
+      <p></p>
+      </section>
+      <section class="main-section" id="plug_ins"><header>Plug Ins</header>
+      <p>
+        Vite can be extended using plugins, which are based on Rollup's well-designed plugin interface with a few extra Vite-specific options. This means that Vite users can rely on the mature ecosystem of Rollup plugins, while also being able to extend the dev server and SSR functionality as needed.
+<br>
+<br>
+<li>To use a plugin, it needs to be added to the devDependencies of the project and included in the plugins array in the vite.config.js config file. For example, to provide support for legacy browsers, the official @vitejs/plugin-legacy can be used:</li>
+<br>
+<code>$ npm add -D @vitejs/plugin-legacy</code>
+      </p>
+      <p>
+        'Plugins' also accepts presets including several plugins as a single element. This is useful for complex features (like framework integration) that are implemented using several plugins. The array will be flattened internally.
+      </p>
+      </section>
+    </main>
+  </body>
+
+  </html>
+<!-- partial -->
+  
+</body>
+</html>

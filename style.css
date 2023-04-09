@@ -1,0 +1,23 @@
+.main-section header {font-family: sans-serif;
+font-weight: bold;
+font-size: 20px;}
+
+body {background-color: #f0f0f0;
+}
+    
+p {font-size: 12px;
+font-family: sans-serif;
+}
+li {font-size: 12px;
+font-family: sans-serif;}
+
+@media (width: 1000px) { body {width: 100%}}
+
+
+  
+main {
+    display: block;
+}
+section {
+    display: block;
+}
